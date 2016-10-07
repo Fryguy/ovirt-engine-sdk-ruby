@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2015-2016 Red Hat, Inc.
+# Copyright (c) 2016 Red Hat, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,25 +14,6 @@
 # limitations under the License.
 #
 
-#
-# Library requirements.
-#
-require 'date'
-
-#
-# Own requirements.
-#
-require 'ovirtsdk4/version.rb'
-require 'ovirtsdk4/error.rb'
-require 'ovirtsdk4/xml_reader.rb'
-require 'ovirtsdk4/xml_writer.rb'
-require 'ovirtsdk4/http.rb'
-require 'ovirtsdk4/type.rb'
-require 'ovirtsdk4/types.rb'
-require 'ovirtsdk4/reader.rb'
-require 'ovirtsdk4/readers.rb'
-require 'ovirtsdk4/writer.rb'
-require 'ovirtsdk4/writers.rb'
-require 'ovirtsdk4/service.rb'
-require 'ovirtsdk4/services.rb'
-require 'ovirtsdk4/probe.rb'
+module OvirtSDK4
+  Error = Class.new(StandardError)
+end

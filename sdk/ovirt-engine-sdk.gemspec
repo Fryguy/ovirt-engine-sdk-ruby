@@ -35,6 +35,7 @@ Gem::Specification.new do |spec|
 
   # Runtime dependencies:
   spec.add_runtime_dependency('curb', '~> 0.8')
+  spec.add_runtime_dependency('nokogiri')
 
   # Build time dependencies:
   spec.add_development_dependency('rake-compiler', '~> 0.9')
